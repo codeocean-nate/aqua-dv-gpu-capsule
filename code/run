@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Deployment verification: GPU check (needs a PyTorch CUDA starter environment).
+set -euo pipefail
+cd "$(dirname "$0")"
+python3 -u gpu_check.py "$@"
